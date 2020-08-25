@@ -1,0 +1,15 @@
+!/bin/bash
+server=idm.rhepds.com
+zone=labs.rhepds.com
+host={{ inventory_hostname_short }}
+secret="nImpLDo1vu5x1eHrV+azfsSfeM4DlH4oaQNS7rEFauCBM3zyKJLvj/dq 50Bc6BS67lQXyxo61rGveD+kGa8KXw=="
+liveip=$(curl http://idm.rhepds.com/wobinich.php)
+
+cat <<EOF | nsupdate 
+server $server
+zone $zone.
+key $zone $secret
+update delete $host.$zone.
+update add $host.$zone. 600 A $liveip
+send
+

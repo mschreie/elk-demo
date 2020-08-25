@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  gather_facts: no
+
+#  vars:
+#    gce_type: n1-standard-1
+#    gce_zone: us-central1-a
+#    gce_source: projects/centos-cloud/global/images/family/centos-8
+
+  tasks:
+  - name: Create GCE VMs
+    include_tasks: gce_create.yml
+    loop: "{{ gce_machines }}"

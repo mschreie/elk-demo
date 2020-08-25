@@ -1,0 +1,8 @@
+---
+el_repo_key: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+jdk_rpm: java-11-openjdk-devel
+
+ddns_key_name:   ==> ddns key name   <==
+ddns_key_secret: ==> ddns key secret <==
+ddns_key_server: ==> ddns key server <==
+ddns_key_zone:   ==> ddns key zone   <==

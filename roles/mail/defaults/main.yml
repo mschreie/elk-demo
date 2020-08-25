@@ -1,0 +1,5 @@
+---
+mail_host: ==> Mail Host (SMTP) <==
+mail_port: 465
+mail_user: ==> Login User <==
+mail_password: ==> Login Password <== 
