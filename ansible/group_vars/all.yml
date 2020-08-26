@@ -1,0 +1,8 @@
+gce_machines:
+   - elastic
+###   - logstash
+
+gce_type: n1-standard-1
+gce_zone: us-central1-a
+gce_source: projects/centos-cloud/global/images/family/centos-8
+gce_disksize: 20
