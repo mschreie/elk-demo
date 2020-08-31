@@ -1,0 +1,12 @@
+gce_machines:
+   - elastic
+###   - logstash
+
+gce_type: n1-standard-1
+gce_zone: us-central1-a
+gce_source: projects/centos-cloud/global/images/family/centos-8
+gce_disksize: 20
+#gce_credentials_file: files/elk-demo-287510-f117be38b220.json
+#gce_credentials_file_vault: files/elk-demo-287510-f117be38b220_vault.json
+#gce_credentials_content: "{{lookup('file', 'path/to/file.txt')}}"
+gce_project_id: "elk-demo-287510"
