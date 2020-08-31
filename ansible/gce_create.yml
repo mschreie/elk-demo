@@ -32,9 +32,9 @@
   register: instance
 
 
-- name: Add tags 
-  gce_tag:
-    instance_name: "{{ item }}"
-    tags: "{{ gce_network_tags }}"
-    state: present
+# - name: Add tags 
+#   gce_tag:
+#     instance_name: "{{ item }}"
+#     tags: "{{ gce_network_tags }}"
+#     state: present
     
