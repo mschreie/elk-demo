@@ -1,6 +1,6 @@
 gce_machines:
    - elastic
-###   - logstash
+   - logstash
 
 gce_type: n1-standard-1
 gce_zone: us-central1-a
