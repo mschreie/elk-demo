@@ -2,8 +2,12 @@
 - hosts: all
   remote_user: cloud-user
   become: yes
+  gather_facts: no
 
   tasks:
+  - name: debug - which host i'm on
+    command: uname -a
+
   - name: Common Config
     include_role:
       name: common
