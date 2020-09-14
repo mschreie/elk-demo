@@ -7,4 +7,3 @@ gce_zone: us-central1-a
 gce_source: projects/centos-cloud/global/images/family/centos-8
 gce_disksize: 20
 gce_network_tags: http-server
-gce_project_id: "elk-demo-287510"

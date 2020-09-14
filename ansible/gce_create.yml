@@ -4,7 +4,7 @@
     size_gb: "{{ gce_disksize }}"
     source_image: "{{ gce_source }}"
     zone: "{{ gce_zone }}"
-    project: "{{ gce_project_id }}"
+#    project: "{{ gce_project_id }}"
     auth_kind: serviceaccount
 #    service_account_file: "{{ gce_credentials_file }}"
 #    service_account_contents: !vault |
